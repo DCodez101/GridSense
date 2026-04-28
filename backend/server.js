@@ -10,7 +10,8 @@ const { prewarmZScore }            = require('./ml/anomaly');
 const { prewarmWeather }           = require('./services/weather');
 const { initPipeline, runPipeline }= require('./pipeline/index');
 const { REGIONS }                  = require('./config/constants');
-const apiRoutes                    = require('./routes/api');
+const apiRoutes = require('./routes/api');
+
 
 const app    = express();
 const server = http.createServer(app);
